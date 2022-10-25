@@ -16,35 +16,56 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="row">
-      <h2>Code Journal</h2>
+  <header class="purple-background">
+    <div class="container">
+      <div class="row">
+        <div class="column-full">
+          <h2 class="white-font header">Code Journal</h2>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <div class="row">
-      <h1>New Entry</h1>
-    </div>
-    <form>
+    <div class="container">
       <div class="row">
-        <img src="">
-        <div>
-          <label>Title</label>
-          <input type="text" name="title" id="title" required>
-        </div>
-        <div>
-          <label>Photo Url</label>
-          <input type="text" name="url" id="url" required>
-        </div>
+        <form>
+          <div class="row">
+            <div class="column-full">
+              <h1>New Entry</h1>
+            </div>
+          </div>
+          <div class="row margin-bottom">
+            <div class="column-half">
+              <img src="/images/placeholder-image-square.jpg">
+            </div>
+            <div class="column-half">
+              <div class="label">
+                <label>Title</label>
+              </div>
+              <div class="input padding-bottom">
+                <input type="text" name="title" id="title" required>
+              </div>
+              <div class="label">
+                <label>Photo Url</label>
+              </div>
+              <div class="input padding-bottom">
+                <input type="text" name="url" id="url" required>
+              </div>
+            </div>
+          </div>
+          <div class="row notes-padding">
+            <label>Notes</label>
+          </div>
+          <div class="row margin-bottom-two">
+            <div class="column-full">
+              <textarea name="notes" id="notes" required></textarea>
+            </div>
+          </div>
+          <div class="row justify-right margin-right">
+            <button>SAVE</button>
+          </div>
+        </form>
       </div>
-      <div class="row">
-        <label>Notes</label>
-        <input type="text" name="notes" id="notes" required>
-      </div>
-    </form>
-    <div class="row">
-      <button>SAVE</button>
-    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>

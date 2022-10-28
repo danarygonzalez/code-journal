@@ -17,7 +17,7 @@
 </head>
 <body>
   <header class="purple-background">
-    <div class="container">
+    <div class="container" data-view="entry-form">
       <div class="row">
         <div class="column-full">
           <h2 class="white-font header">Code Journal</h2>
@@ -28,7 +28,7 @@
   <main class="gray-background">
     <div class="container">
       <div class="row">
-        <form>
+        <form class="main-form">
           <div class="row">
             <div class="column-full">
               <h1>New Entry</h1>
@@ -36,7 +36,7 @@
           </div>
           <div class="row margin-bottom">
             <div class="column-half">
-              <img src="/images/placeholder-image-square.jpg">
+              <img class="img-src" src="/images/placeholder-image-square.jpg">
             </div>
             <div class="column-half">
               <div class="label">
@@ -49,7 +49,7 @@
                 <label>Photo Url</label>
               </div>
               <div class="input padding-bottom">
-                <input type="text" name="url" id="url" required>
+                <input class="photoUrl" type="text" name="url" id="url" required>
               </div>
             </div>
           </div>

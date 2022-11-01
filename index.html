@@ -14,11 +14,61 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="purple-background">
+    <div class="container" data-view="entry-form">
+      <div class="row">
+        <div class="column-full">
+          <h2 class="white-font header">Code Journal</h2>
+        </div>
+      </div>
+    </div>
   </header>
-  <main>
+  <main class="gray-background">
+    <div class="container">
+      <div class="row">
+        <form class="main-form">
+          <div class="row">
+            <div class="column-full">
+              <h1>New Entry</h1>
+            </div>
+          </div>
+          <div class="row margin-bottom">
+            <div class="column-half">
+              <img class="img-src" src="/images/placeholder-image-square.jpg">
+            </div>
+            <div class="column-half">
+              <div class="label">
+                <label>Title</label>
+              </div>
+              <div class="input padding-bottom">
+                <input type="text" name="title" id="title" class="title" required>
+              </div>
+              <div class="label">
+                <label>Photo Url</label>
+              </div>
+              <div class="input padding-bottom">
+                <input type="text" name="url" id="url" required>
+              </div>
+            </div>
+          </div>
+          <div class="row notes-padding">
+            <label>Notes</label>
+          </div>
+          <div class="row margin-bottom">
+            <div class="column-full">
+              <textarea name="notes" id="notes" required></textarea>
+            </div>
+          </div>
+          <div class="row justify-right margin-right">
+            <button>SAVE</button>
+          </div>
+        </form>
+      </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>

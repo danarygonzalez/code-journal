@@ -3,6 +3,9 @@ var $imgSrc = document.querySelector('.img-src');
 var $photoUrl = document.querySelector('#url');
 $photoUrl.addEventListener('input', function (event) {
   $imgSrc.src = $photoUrl.value;
+  if ($imgSrc.src === 'http://localhost:5500/index.html') {
+    $imgSrc.src = '/images/placeholder-image-square.jpg';
+  }
 });
 
 // Submit entry form
